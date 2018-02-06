@@ -1,4 +1,18 @@
+* html, body{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
 body{
+    padding: 20px;
     text-align: center;
-    background: peachpuff;
-} 
+    font-family: 'Gentium Book Basic', serif;
+}
+h1{
+font-family: 'Neuton', serif;
+}
+h2{
+font-family: 'Neuton', serif;}
+hr{
+ color:orangered;
+    }
