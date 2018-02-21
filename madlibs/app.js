@@ -14,13 +14,30 @@ submitButton.onclick= function(){
     get all words and generate story
 */
     const message = document.createElement("p");
-    message.textContent = exclamationInput.value
+
+    document.body.appendChild(message);
+    
+    
+    if(exclamationInput.value && adverbInput.value && nounInput.value && adjectiveInput.value){
+        message.textContent = exclamationInput.value
                          +" he said "
                          + adverbInput.value
                          + " as he jumped into his convertible "
                          + nounInput.value   
                          +" and drove off with his "
                          + adjectiveInput.value
-                         +" wife."
-    document.body.appendChild(message);
+                         +" wife." 
+        
+    }
+    else if(!exclamationInput.value && adjectiveInput.value && nounInput.value && adjectiveInput.value){
+        message.textContent = "You forgot to add an exclamation!";  
+    } 
+    else if(!adverbInput.value){
+        message.textContent = "You forgot to add an adverb!";  
+    }  
+    else if(!nounInput.value){
+        message.textContent = "You forgot to add an noun!";  
+    } 
+    else(){
+        message.textContent = "You forgot to fill in the blank";
 };
