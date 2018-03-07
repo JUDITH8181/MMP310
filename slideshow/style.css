@@ -1,0 +1,16 @@
+body{
+	background-color: peachpuff;
+}
+
+img.slide {
+max-width: 200px;
+
+}
+p.caption{
+	font-family: cursive;
+	color: black;
+}
+#container{
+	display:grid;
+	grid-template-column: 1fr 1fr;
+}
