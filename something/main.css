@@ -1,0 +1,12 @@
+body, input,button::-webkit-input-placeholder {
+	font-family: curesive;
+	color:peachpuff;
+	background-color: black;
+}
+.task p {
+	margin: 0;
+
+}
+.tsk button{
+	color:red;
+}
